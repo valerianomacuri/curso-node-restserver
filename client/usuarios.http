@@ -1,15 +1,27 @@
-GET  http://localhost:3000/api/usuarios?q=leonardo&apiKey=123456
+GET   http://localhost:8080/api/usuarios?q=leonardo&apiKey=123456
 Content-Type: application/json
 
 ###
-POST http://localhost:3000/api/usuarios
+POST  http://localhost:8080/api/usuarios
 Content-Type: application/json
 
 {
-    "nombre": "Leonardo",
-    "edad": 22
+    "nombre": "Test1",
+    "google": true,
+    "nuevoCampo": true,
+    "correo": "test1@test.com",
+    "password": "123456",
+    "rol": "USER_ROLE"
 }
 
 ###
-PUT http://localhost:3000/api/usuarios/33
+PUT  http://localhost:8080/api/usuarios/62cca560903d1d1c4df5490c
 Content-Type: application/json
+
+{
+    "nombre": "Test1-2",
+    "google": true,
+    "correo": "test1@test.com",
+    "password": "123456",
+    "rol": "USER_ROLE"
+}
